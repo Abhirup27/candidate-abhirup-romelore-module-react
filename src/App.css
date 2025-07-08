@@ -3,7 +3,6 @@
 /*@import '/node_modules/@fortawesome/fontawesome-svg-core/styles.css';*/
 
 @import "tailwindcss";
-@import "tailwindcss/preflight"
 @tailwind utilities;
 
 

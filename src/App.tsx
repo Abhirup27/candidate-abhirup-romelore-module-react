@@ -2,8 +2,7 @@ import { useState, useEffect, useRef } from 'react';
 import { Navbar, Footer, PaymentModal } from './components/layout';
 import { Hero, CareDuelBanner, StoriesSection, AwardsSection, CommunitySection } from './components/sections';
 import { RaffleWidget } from './components/widgets';
-import { stories } from './data/stories';
-import { useClickOutside } from './hooks/useClickOutside';
+
 import './App.css';
 
 const App = () => {
@@ -55,9 +54,7 @@ const App = () => {
 
     return (
         <div className="min-h-screen bg-gradient-to-b from-amber-50 to-stone-100" style={{
-            fontFamily: 'Lora, serif',
-            '--primary-color': '#B8860B',
-            '--accent-color': '#800000'
+            fontFamily: 'Lora, serif'
         }}>
             <Navbar
                 mobileMenuOpen={mobileMenuOpen}

@@ -10,6 +10,7 @@ export default setSeederFactory(Story, () => {
     story.title = faker.lorem.sentence({min: 4, max: 10});
     story.content = faker.lorem.paragraph({min: 15, max: 20});
     story.excerpt = faker.lorem.sentences({min: 1, max: 3});
+    story.category = faker.helpers.arrayElement(['Sacred Sites', 'Historical Sites', 'Religious Sites', 'Natural Sites', 'Other']);
     story.image = faker.image.urlPicsumPhotos()
 
     return story;

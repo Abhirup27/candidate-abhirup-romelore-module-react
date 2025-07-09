@@ -18,6 +18,8 @@ export class Story {
     content!: string;
     @Column({nullable: true, type: 'text'})
     image!: string;
+    @Column({nullable: true})
+    category!: string;
     @Column({type: 'timestamp', default: () => 'CURRENT_TIMESTAMP'})
     date?: Date;
 

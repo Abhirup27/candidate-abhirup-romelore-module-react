@@ -8,7 +8,7 @@ const StoriesSection = () => {
         const fetchStories = async () => {
             try {
                 setLoadingStories(true);
-                const response = await fetch('http://ec2-13-218-140-45.compute-1.amazonaws.com/api/v1/stories');
+                const response = await fetch('https://ec2-13-218-140-45.compute-1.amazonaws.com/api/v1/stories');
                 const data = await response.json();
                 setStories(data);
             } catch (error) {

@@ -1,6 +1,6 @@
 import { ChevronDown } from 'lucide-react';
 
-interface StoryCardProps {
+export interface StoryCardProps {
     title: string;
     author: string;
     excerpt: string;

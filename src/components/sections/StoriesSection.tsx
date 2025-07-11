@@ -8,7 +8,7 @@ const StoriesSection = () => {
         const fetchStories = async () => {
             try {
                 setLoadingStories(true);
-                const response = await fetch('https://demo1.roop-backend.site/api/v1/stories');
+                const response = await fetch('https://demo3.roop-backend.site/api/v1/stories');
                 const data = await response.json();
                 setStories(data);
             } catch (error) {
